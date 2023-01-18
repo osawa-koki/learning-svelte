@@ -5,7 +5,7 @@ import setting from '../setting';
 let languages = [];
 
 function FetchData() {
-  fetch(`${setting.basePath}/languages.json`)
+  fetch(`/languages.json`)
     .then(response => response.json())
     .then(json => {
       languages = json.languages;
@@ -29,7 +29,7 @@ function FetchData() {
       <tr>
         <td>{language.name}</td>
         <td>{language.birthday}</td>
-        <td>{language.on_trend}</td>
+        <td>{language.on_trend ? '🚀🚀🚀' : '………………'}</td>
       </tr>
       {/each}
     </tbody>
