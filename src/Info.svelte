@@ -1,10 +1,11 @@
 <script lang="ts">
 import { Alert, Button, Table  } from 'sveltestrap';
+import setting from '../setting';
 
 let languages = [];
 
 function FetchData() {
-  fetch('/languages.json')
+  fetch(`${setting.basePath}/languages.json`)
     .then(response => response.json())
     .then(json => {
       languages = json.languages;
