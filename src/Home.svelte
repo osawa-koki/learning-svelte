@@ -4,7 +4,7 @@ import setting from '../setting';
 
 <div>
 	<h1>Hello Svelte!</h1>
-  <img src={`{setting.basePath}/Logo.png`} alt="Logo" id="Logo" />
+  <img src={`${setting.basePath}/Logo.png`} alt="Logo" id="Logo" />
 </div>
 
 <style lang="scss">
