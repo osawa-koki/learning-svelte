@@ -31,10 +31,6 @@
   });
 </script>
 
-<svelte:head>
-  <base href={setting.basePath}>
-</svelte:head>
-
 <div>
   <main>
     {#if state === 0}
