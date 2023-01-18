@@ -16,3 +16,7 @@ yarn dev
 # プロダクションビルド
 yarn build
 ```
+
+## 参考文献
+
+- [公式ドキュメント](https://svelte.dev/docs)
